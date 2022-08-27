@@ -804,8 +804,88 @@ align-items: center;
 
 
 
+
+
+
 @media (min-width: 1200px) {
 .container {
     max-width: 1300px !important;
+}
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    /* HOME PAGE */
+    .oerlay::before {
+        height:52%
+    }
+    .round{
+        font-size: 40px;
+    }
+    .cont button {
+        width: 50%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 425px) {
+.topNav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-direction: column;
+    align-items: center
+}
+.banner .buttons {
+flex-direction: column;
+align-items: center;
+}
+
+.b1{
+    margin-bottom: 20px;
+}
+.doGallery{
+    flex-direction: column;
+}
+
+.gallery {
+    width: 100%;
+}
+.choose{
+    flex-direction: column;
+}
+.chooseList {
+    width: 100%;
+}
+.offer{
+    flex-direction: column;
+}
+.of-img {
+    width: 100%;
+}
+.of-text {
+    padding-left: 0;
+    width: 100%;
+}
+.review, .order, .catlogLists{
+    flex-direction: column;
+}
+.r1, .orderLi, .lis {
+    width: 100%;
+    
+}
+
+.lis{
+    margin-bottom: 30px;
+}
+
+.r1 img {
+    padding-bottom: 5px;
+}
+
+.order-text {
+    width: 100%;
+}
+.order-contacts {
+    width: 100%;
 }
 }
