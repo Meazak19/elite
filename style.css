@@ -92,45 +92,35 @@ a.nav-link {
     padding: 15px 30px;
     color: #fff;
     transition: 0.5s;
-
 }
-
 .b1:hover{
     color: rgba(255, 255, 255, 0.645);
     transition: 0.5s;
     cursor: pointer;
-
 }
-
-
 .buttons .b2{
     background-color: transparent;
-    
     padding: 15px 30px;
     border: 2px solid #fff !important;
     color: #fff;
     transition: 0.5s;
 }
-
 .buttons .b2:hover{
     border: 2px solid #e83131 !important;
     color: #e83131;
     transition: 0.5s;
     cursor: pointer;
 }
-
 .banner-text{
     padding-top: 180px;
 }
 .banner-btn{
     padding-bottom: 180px;
 }
-
 button:focus {
     outline: 0px dotted !important;
     outline: 0px auto-webkit-focus-ring-color !important;
 }
-
 /* What We Do Section */
 .do{
     padding-top: 120px;
@@ -797,7 +787,26 @@ align-items: center;
 
 
 
+::selection{
+    background-color: #e83131;
+    color: #fff;
+}
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #e83131;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 0);
+  }
 
 
 
