@@ -453,10 +453,12 @@ align-items: center;
     flex-direction: column;
     align-items: stretch;
     padding: 30px;
+    border: 2px solid #000;
+    outline: 5px solid #f2f2f2;
     
 }
 
-.order-contacts::before{
+/* .order-contacts::before{
     content: "";
     top: 5px;
     bottom: 5px;
@@ -465,7 +467,7 @@ align-items: center;
     z-index: 999;
     position: absolute;
     border: 2px solid #000;
-}
+} */
 
 
 .cont button{
@@ -820,8 +822,29 @@ align-items: center;
 .container {
     max-width: 1300px !important;
 }
+
+
 }
 
+@media (min-width: 769px) and (max-width: 1200px) {
+    .oerlay::before {
+        height: 66%;
+    }
+    .overlay::after {
+        height: 90%;
+    }
+    .of {
+        padding-top: 38px;
+        padding-bottom: 25px;
+    }
+
+    .offer p {
+        padding: 0;
+    }
+}
+
+
+/* TAB */
 @media (min-width: 426px) and (max-width: 768px) {
 
     /* HOME PAGE */
@@ -834,8 +857,56 @@ align-items: center;
     .cont button {
         width: 50%;
     }
+    /* ABOUT */
+    .offer{
+        flex-direction: column;
+    }
+    .of-img{
+        width: 100%;
+    }
+    .of-text{
+        width: 100%;
+        padding-left: 0;
+    }
+    .overlay::after {
+        width: 91%;
+        height: 87%;
+    }
+
+    .of {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .pro-header {
+        display: none !important;
+    }
+    .pro-list{
+        flex-direction: column;
+    }
+    .l1{
+        width: 100%;
+        padding: 35px 0;
+        text-align: center;
+    }
+    .l2{
+        width: 100%;
+        text-align: center;
+    }
+    .l3{
+        width: 100%;
+        padding: 35px 0;
+        text-align: center;
+    }
+    .icc {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
+
+/* MOBILE */
 @media (min-width: 300px) and (max-width: 425px) {
 .topNav{
     display: flex;
@@ -896,5 +967,38 @@ align-items: center;
 }
 .order-contacts {
     width: 100%;
+    padding-top: 25px;
 }
+
+
+
+.pro-header {
+    display: none !important;
+}
+.pro-list{
+    flex-direction: column;
+}
+.l1{
+    width: 100%;
+    padding: 35px 0;
+    text-align: center;
+}
+.l2{
+    width: 100%;
+    text-align: center;
+}
+.l3{
+    width: 100%;
+    padding: 35px 0;
+    text-align: center;
+}
+
+
+.icc {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 }
